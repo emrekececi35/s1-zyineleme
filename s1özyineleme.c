@@ -35,7 +35,7 @@ int main()
 
     printf("Eþyalarýn fiyat ve niktarýný giriniz:\n");
     for(index = 0;index < esyaSayisi; ++index){
-        printf("%d.Eþyayý giriniz\n",index);
+        printf("%d.Eþyayý giriniz\n",index++);
         scanf("%d%d", &fiyat[index], &miktar[index]);
     }
 
