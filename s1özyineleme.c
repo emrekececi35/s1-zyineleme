@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+#include<locale.h>
 int index, esyaSayisi, fiyat[20], miktar[20], cantaHacmi;
 int en_yuksek(int x,int y){
 	if(x>y)
@@ -28,17 +29,17 @@ int yerlestir(int esyaSayisi,int cantaHacmi){
 int main()
 {
     
-
-    printf("Girilecek eşya sayısı:");
+	setlocale(LC_ALL, "Turkish"); 	
+    printf("Girilecek eÃ¾ya sayÃ½sÃ½:");
     scanf("%d", &esyaSayisi);
 
-    printf("Eşyaların fiyat ve niktarını giriniz:\n");
+    printf("EÃ¾yalarÃ½n fiyat ve niktarÃ½nÃ½ giriniz:\n");
     for(index = 0;index < esyaSayisi; ++index){
-        printf("%d.Eşyayı giriniz\n",index);
+        printf("%d.EÃ¾yayÃ½ giriniz\n",index);
         scanf("%d%d", &fiyat[index], &miktar[index]);
     }
 
-    printf("Çanta Hacmini Giriniz:");
+    printf("Ã‡anta Hacmini Giriniz:");
     scanf("%d", &cantaHacmi);
 	
 	
